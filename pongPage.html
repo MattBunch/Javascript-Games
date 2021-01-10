@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <link rel="icon" href="https://i.ibb.co/7JfqJK4/website-icon-ico.png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="#something">
+          <img src="img/header-logo.png" alt="logo" class="logo" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="/second/homePage.html">Home</a></li>
+            <li>
+              <a>Games</a>
+              <ul class="dropdown">
+                <li><a href="/second/snakePage.php">Snake</a></li>
+                <li><a href="/second/pongPage.html">Pong</a></li>
+                <li><a href="/second/brickPage.php">Brick</a></li>
+              </ul>
+            </li>
+            <li><a href="/second/leaderboardPage.php">Leaderboards</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="main">
+      <h1 id="title">Pong!</h1>
+      <canvas id="canvas" width="400" height="400"></canvas>
+      <button id="playbutton" onclick="startPongGame()">Play pong!</button>
+      <h2 id="playerScore">Player Score: 0</h2>
+      <h2 id="npcScore">NPC Score: 0</h2>
+      <script src="pong.js"></script>
+    </div>
+  </body>
+</html>
